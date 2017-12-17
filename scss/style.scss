@@ -3,10 +3,6 @@
 @import '_variables';
 @import '_layout/_layout';
 
-:root {
-    --bg-color: #ccc;
-}
-
 h1,
 h2,
 h3,
@@ -17,7 +13,8 @@ h6 {
 }
 
 body {
-    background-color: var(--bg-color);
+    background-color: $body-bg-color;
+    font: 400 18px/1.62 $main-font;
 }
 
 
@@ -70,3 +67,67 @@ textarea:focus,
 select:focus {}
 
 textarea {}
+
+
+.ba-accordion{
+	max-width: 380px;
+	margin: 0 auto;
+	padding-top: 35px;
+}
+
+.ba-item{
+	&__title{
+		font-size: 24px;
+		line-height: 1;	
+		padding: 41px 0 35px 108px;
+	}
+
+	&__description{
+		padding: 8px 5px 8px 15px; 
+		margin: 0; 
+		box-shadow: inset 0 0 5.1px 0.9px rgba(0, 0, 0, 0.25); 
+	}
+	
+	&--location{
+		background-color: $location-bg-color;
+		color: $location-text-color;
+		h1{
+			background: url('../img/Location.png') 5% no-repeat; 
+		}
+	}
+	&--music{
+		background-color: $music-bg-color;
+		color: $music-text-color;
+		h1{
+			background: url('../img/Headphones.png') 5% no-repeat; 
+		} 
+	}
+	&--notes{
+		background-color: $notes-bg-color;
+		color: $notes-text-color;
+		h1{
+			background: url('../img/Lightbulb.png') 5% no-repeat; 
+		} 
+	}
+	&--books{
+		background-color: $books-bg-color;
+		color: $books-text-color;
+		h1{
+			background: url('../img/Bookmarks.png') 5% no-repeat; 
+		}
+	}
+	&--tendances{
+		background-color: $tendances-bg-color;
+		color: $tendances-text-color;
+		h1{
+			background: url('../img/Lightning.png') 5% no-repeat; 
+		}
+	}
+}
+
+
+
+
+
+
+
