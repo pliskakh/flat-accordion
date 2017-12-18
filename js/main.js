@@ -3,7 +3,9 @@
 
 	$(document).ready(function(){
 		$('.ba-item__description').not(':first').hide();
-		$('.ba-item__title').click(function(){
+		
+		$('.ba-item__title').on('click', function(e){
+			e.preventDefault();
 
 			var description = $(this).next('.ba-item__description');
 			var accordion = $(this).closest('.ba-accordion');
@@ -17,6 +19,5 @@
 
 		});
 	});
-
 
 })();
