@@ -80,6 +80,9 @@ textarea {}
 		font-size: 24px;
 		line-height: 1;	
 		padding: 41px 0 35px 108px;
+		&:hover{
+			cursor: pointer;
+		}
 	}
 
 	&__description{

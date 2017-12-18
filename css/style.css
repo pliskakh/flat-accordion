@@ -662,6 +662,10 @@ select {
   padding: 41px 0 35px 108px;
 }
 
+.ba-item__title:hover {
+  cursor: pointer;
+}
+
 .ba-item__description {
   padding: 8px 5px 8px 15px;
   margin: 0;
